@@ -1,0 +1,16 @@
+.button-submit{
+  background-color: #732929;
+  height: 2em; width: 12em;
+  border-radius: 1em;
+  font-size: 1.0em;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+.button-submit:hover{
+  background-color: #6C7339;
+  color: aliceblue;
+  cursor: pointer;
+  transition-duration: 300ms;
+  font-weight: bold;
+}

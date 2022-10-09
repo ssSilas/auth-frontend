@@ -1,0 +1,23 @@
+.container-input-login {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 5% 0;
+}
+.input-login-email {
+  height: 3em; width: 25em;
+  border-radius: 0.5em;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  outline: none;
+  padding-left: 1.2em;
+}
+
+.input-login-email::placeholder{
+  font-size: 1.1em;
+}
+
+.input-login-email:hover{
+  background-color:#7449494f;
+}
