@@ -4,7 +4,9 @@ import './Button.css'
 const Button = ({name}) => {
   return ( 
     <>
-      <button className='button-submit'>{name}</button>
+      <div className='container-button-submit'>
+        <button className='button-submit'>{name}</button>
+      </div>
     </>
   );
 }

@@ -1,8 +1,12 @@
+.container-button-submit {
+  padding: 2% 0;
+}
+
 .button-submit{
   background-color: #732929;
-  height: 2em; width: 12em;
+  height: 5vh; width: 25vw;
   border-radius: 1em;
-  font-size: 1.0em;
+  font-size: 1.5rem;
   color: aliceblue;
   font-weight: bold;
 }
