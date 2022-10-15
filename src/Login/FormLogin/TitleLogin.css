@@ -1,0 +1,9 @@
+.container-title-login{
+  display: flex;
+  font-size: 3em;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #5b5c54;
+  text-decoration: overline #5b5c5455;
+  /* text-decoration-line: overline; */
+}

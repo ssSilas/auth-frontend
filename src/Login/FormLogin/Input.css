@@ -1,0 +1,26 @@
+.container-input-login {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 5% 0;
+}
+.input-login {
+  height: 3em;
+  font-size: 1.0em;
+  font-weight: 600;
+  border-radius: 0.5em;
+  border: 1px solid #0000002d;
+  outline: none;
+  padding-left: 1.2em;
+}
+
+.input-login::placeholder{
+  font-size: 1.1em;
+}
+
+.input-login:hover{
+  background-color:#7449494f;
+}

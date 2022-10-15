@@ -1,0 +1,11 @@
+.conteiner-dot{
+  width: 100%;
+  display: flex;
+}
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #443a3a67;
+  border-radius: 50%;
+  display: inline-block;
+}

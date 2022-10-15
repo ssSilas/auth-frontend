@@ -1,0 +1,20 @@
+.container-forgot-pass{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+  padding: 2% 0;
+}
+
+.p-forgot-pass{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #732929;
+}
+.p-forgot-pass:hover{
+  color: #6C7339;
+  cursor: pointer;
+  transition-duration: 300ms;
+  font-weight: bold;
+}
