@@ -1,0 +1,10 @@
+Tarefas:
+
+- Implementar criação de funcionarios
+- Implementar alternar entre bancos
+
+Ideias:
+
+- Integrar back ao front
+- Implementar variaveis de ambiente - http://127.0.0.1:3050
+- Botão mostrar e esconder senha

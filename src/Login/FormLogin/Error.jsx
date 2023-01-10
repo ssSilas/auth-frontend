@@ -1,9 +1,9 @@
 import React from 'react'
-import './Dot.css'
-const Dot = ({justify}) => {
+import './Error.css'
+const Dot = ({message}) => {
   return ( 
     <>
-      <div style={{ justifyContent: justify }} className='conteiner-dot'>
+      <div style={{ justifyContent: justify }} className=''>
         <span className="dot"></span>
       </div>
     </>
