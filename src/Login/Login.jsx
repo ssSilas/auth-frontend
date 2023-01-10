@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "./FormLogin/Button";
 import Dot from "./FormLogin/Dot";
+import Error from "./FormLogin/Error";
 import ForgotPass from "./FormLogin/ForgotPass";
 import InputLogin from "./FormLogin/Input";
 import TitleLogin from "./FormLogin/TitleLogin";
@@ -26,8 +27,7 @@ function ScreenLogin() {
     try {
       const auth = await signIn(login, pass);
     } catch (error) {
-      console.log("setou errp")
-      setError(error)
+      setError(error.message);
     }
   };
 
@@ -51,7 +51,7 @@ function ScreenLogin() {
             name={"Password"}
             type="password"
           />
-          
+          <Error message={error} />
           <ForgotPass />
           <Button name={"Sign In"} />
         </div>

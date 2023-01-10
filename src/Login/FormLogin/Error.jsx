@@ -1,13 +1,13 @@
-import React from 'react'
-import './Error.css'
-const Dot = ({message}) => {
-  return ( 
+import React from "react";
+import "./Error.css";
+const Error = ({ message }) => {
+  return (
     <>
-      <div style={{ justifyContent: justify }} className=''>
-        <span className="dot"></span>
+      <div className="conteiner-error-message">
+        <p className="error-message">{message}</p>
       </div>
     </>
   );
-}
- 
-export default Dot;
+};
+
+export default Error;

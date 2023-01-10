@@ -18,8 +18,8 @@ export const signIn = async (login, password) => {
     }).then((token) => {
       return token;
     });
-    return req;
+    return req.data;
   } catch (error) {
-    throw { error: error.response.data.message };
+    throw { message: error.response.data.message };
   }
 };
