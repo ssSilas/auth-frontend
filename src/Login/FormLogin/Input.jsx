@@ -1,10 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Input.css";
+import ButtonPass from "./Buttons/Button-pass";
 const InputLogin = (props) => {
+  const [typePass, setTypePass] = useState("password");
+  const changeTypePass = (boolean) => {
+    boolean ? setTypePass("text") : setTypePass("password");
+  };
+
   return (
     <>
       <div className="container-input-login">
-        <input placeholder={props.name} className="input-login" onChange={props.onChange}  type={props.type} value={props.value} />
+        <input
+          placeholder={props.name}
+          className="input-login"
+          onChange={props.onChange}
+          type={props.type != "password" ? props.type : typePass}
+          value={props.value}
+        />
+
+        {props.type == "password" ? (
+          <ButtonPass typeInputPass={changeTypePass} />
+        ) : (
+          ""
+        )}
       </div>
     </>
   );

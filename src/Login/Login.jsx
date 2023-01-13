@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./FormLogin/Button";
+import ButtonSign from "./FormLogin/Buttons/Button-sign";
 import Dot from "./FormLogin/Dot";
 import Error from "./FormLogin/Error";
 import ForgotPass from "./FormLogin/ForgotPass";
@@ -53,7 +53,7 @@ function ScreenLogin() {
           />
           <Error message={error} />
           <ForgotPass />
-          <Button name={"Sign In"} />
+          <ButtonSign name={"Sign In"} />
         </div>
         <Dot justify="left" />
       </form>
