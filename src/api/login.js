@@ -20,6 +20,7 @@ export const signIn = async (login, password) => {
     });
     return req.data;
   } catch (error) {
-    throw { message: error.response.data.message };
+    console.log(error)
+    throw { message: "Login e/ou senha inválidos" };
   }
 };

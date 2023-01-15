@@ -1,9 +1,8 @@
-import Background from "./Login/Login.jsx";
+import Routers from "./routes/routes.js";
 
 function App() {
-
   return (
-    <Background/>
+    <Routers/>
   );
 }
 
