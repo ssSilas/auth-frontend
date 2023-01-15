@@ -1,13 +1,13 @@
 import React from "react";
-import ButtonSign from "./FormLogin/Buttons/Button-sign";
-import Dot from "./FormLogin/Dot";
-import Error from "./FormLogin/Error";
-import ForgotPass from "./FormLogin/ForgotPass";
-import InputLogin from "./FormLogin/Input";
-import TitleLogin from "./FormLogin/TitleLogin";
-import "./Login.css";
+import ButtonSign from "./Buttons/Button-sign";
+import Dot from "./Dot";
+import Error from "./Error";
+import ForgotPass from "./ForgotPass";
+import InputLogin from "./Input";
+import TitleLogin from "./TitleLogin";
+import "./styles/Login.css";
 import { useState } from "react";
-import { signIn } from "../api/login";
+import { signIn } from "../../api/login";
 
 function ScreenLogin() {
   const [error, setError] = useState("");

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Input.css";
+import "./styles/Input.css";
 import ButtonPass from "./Buttons/Button-pass";
 const InputLogin = (props) => {
   const [typePass, setTypePass] = useState("password");

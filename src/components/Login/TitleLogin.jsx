@@ -1,5 +1,5 @@
 import React from "react";
-import "./TitleLogin.css";
+import "./styles/TitleLogin.css";
 const TitleLogin = ({ text }) => {
   return (
     <>

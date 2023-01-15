@@ -2,6 +2,7 @@ Ideias:
 
 X Integrar back ao front
 X Botão mostrar e esconder senha
+X Validações nos campos de login
 - Implementar criação de usuario
 - Implementar criação de funcionarios
 - Implementar alternar entre bancos
