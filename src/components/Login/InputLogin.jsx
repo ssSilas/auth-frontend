@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./styles/Input.css";
-import ButtonPass from "./Buttons/Button-pass";
+import ButtonPass from "../../assets/jsx/Button-pass";
+
 const InputLogin = (props) => {
   const [typePass, setTypePass] = useState("password");
   const changeTypePass = (boolean) => {
@@ -17,13 +18,12 @@ const InputLogin = (props) => {
           type={props.type != "password" ? props.type : typePass}
           value={props.value}
         />
-
-        {props.type == "password" ? (
-          <ButtonPass typeInputPass={changeTypePass} />
-        ) : (
-          ""
-        )}
       </div>
+      {props.type == "password" ? (
+        <ButtonPass typeInputPass={changeTypePass} />
+      ) : (
+        ""
+      )}
     </>
   );
 };

@@ -1,10 +1,10 @@
 import React from "react";
 import ButtonSign from "./Buttons/Button-sign";
-import Dot from "./Dot";
+import Dot from "../../assets/jsx/Dot";
 import Error from "./Error";
 import ForgotPass from "./ForgotPass";
-import InputLogin from "./Input";
-import TitleLogin from "./TitleLogin";
+import InputLogin from "./InputLogin";
+import Title from "../../assets/jsx/Title";
 import "./styles/Login.css";
 import { useState } from "react";
 import { signIn } from "../../api/login";
@@ -35,9 +35,10 @@ function ScreenLogin() {
     <div className="screen-login">
       <form className="form-login" onSubmit={handleSubmit}>
         <Dot justify="right" />
-        <div className="title-login">
-          <TitleLogin text="Sign In" />
+        <div className="title">
+          <Title text="Sign In" />
         </div>
+        <ForgotPass />
         <div className="interface-login">
           <InputLogin
             onChange={changeEmail}
@@ -52,7 +53,6 @@ function ScreenLogin() {
             type="password"
           />
           <Error message={error} />
-          <ForgotPass />
           <ButtonSign name={"Sign In"} />
         </div>
         <Dot justify="left" />

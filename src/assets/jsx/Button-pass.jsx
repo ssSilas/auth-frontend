@@ -1,7 +1,7 @@
 import React from "react";
-import "./Button.css";
-import eyeImg from "../../../icons/eye.png";
-import blindEyeImg from "../../../icons/blind-eye.png";
+import "../css/ButtonPass.css";
+import eyeImg from "../../icons/eye.png";
+import blindEyeImg from "../../icons/blind-eye.png";
 import { useState } from "react";
 
 const ButtonPass = ({ typeInputPass }) => {

@@ -11,7 +11,7 @@ const Routers = () => {
     <BrowserRouter>
       <Routes>
         <Route element={<Login />} path="/" exact />
-        <Route element={<CreateUser />} path="/criar" exact />
+        <Route element={<CreateUser />} path="/criar-usuario" exact />
         {/* <Route component={Usuario} path="/usuario" /> */}
       </Routes>
     </BrowserRouter>

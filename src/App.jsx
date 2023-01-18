@@ -1,8 +1,11 @@
 import Routers from "./routes/routes.js";
+import "./App.css"
 
 function App() {
   return (
-    <Routers/>
+    <div className="general">
+      <Routers />
+    </div>
   );
 }
 
