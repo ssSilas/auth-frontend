@@ -1,0 +1,27 @@
+.container-input-login {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 5% 0;
+}
+.inputs-create-user {
+  height: 3em;
+  font-size: 1.0em;
+  font-weight: 600;
+  border-radius: 0.5em;
+  border: 1px solid #0000002d;
+  outline: none;
+  padding-left: 1.2em;
+  margin: 0.7vh 0;
+}
+
+.inputs-create-user::placeholder{
+  font-size: 1.1em;
+}
+
+.inputs-create-user:hover{
+  background-color:#7449494f;
+}
