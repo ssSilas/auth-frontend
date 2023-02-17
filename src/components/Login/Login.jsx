@@ -2,12 +2,12 @@ import React from "react";
 import ButtonSign from "./Buttons/Button-sign";
 import Dot from "../../assets/jsx/Dot";
 import Error from "./Error";
-import ForgotPass from "./ForgotPass";
+import LinkCreateUser from "../../assets/jsx/LinkCreateUser";
 import InputLogin from "./InputLogin";
 import Title from "../../assets/jsx/Title";
 import "./styles/Login.css";
 import { useState } from "react";
-import { signIn } from "../../api/login";
+import { signIn } from "../../api/user";
 
 function ScreenLogin() {
   const [error, setError] = useState("");
@@ -25,7 +25,7 @@ function ScreenLogin() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const auth = await signIn(login, pass);
+      await signIn(login, pass);
     } catch (error) {
       setError(error.message);
     }
@@ -38,7 +38,7 @@ function ScreenLogin() {
         <div className="title">
           <Title text="Sign In" />
         </div>
-        <ForgotPass />
+        <LinkCreateUser name={"Create User"} to={"/criar-usuario"} />
         <div className="interface-login">
           <InputLogin
             onChange={changeEmail}
