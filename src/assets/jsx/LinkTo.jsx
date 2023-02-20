@@ -4,7 +4,7 @@ import "../css/LinkCreateUser.css";
 import { Link } from "react-router-dom";
 import arrowRight from "../../icons/arrow-right.png";
 
-const LinkCreateUser = ({to, name}) => {
+const LinkTo = ({to, name}) => {
   const arrow = arrowRight;
   return (
     <>
@@ -18,4 +18,4 @@ const LinkCreateUser = ({to, name}) => {
   );
 };
 
-export default LinkCreateUser;
+export default LinkTo;

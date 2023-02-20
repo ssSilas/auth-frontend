@@ -6,7 +6,7 @@ import InputsCreateUser from "./InputCreateUser";
 import Error from "../Login/Error";
 import { createUser } from "../../api/user";
 import ButtonCreate from "./Buttons/Button-create";
-import LinkCreateUser from "../../assets/jsx/LinkCreateUser";
+import LinkTo from "../../assets/jsx/LinkTo";
 
 function CreateUser() {
   const [error, setError] = useState("");
@@ -56,7 +56,7 @@ function CreateUser() {
         <div className="title">
           <Title text="Create user" />
         </div>
-        <LinkCreateUser name={"Sign In"} to={'/login'}/>
+        <LinkTo name={"Sign In"} to={'/'}/>
         <InputsCreateUser
           addName={addName}
           addEmail={addEmail}
