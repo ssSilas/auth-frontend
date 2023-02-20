@@ -3,8 +3,6 @@ Ideias:
 X Integrar back ao front
 X Botão mostrar e esconder senha
 X Validações nos campos de login
-- Implementar criação de usuario
-- Implementar criação de funcionarios
-- Implementar alternar entre bancos
+X Implementar criação de usuario
+- Criar tela para permissões que admin e client poderão acessar
 - Implementar variaveis de ambiente - http://127.0.0.1:3050
-- Incrementar README (BACK E FRONT)

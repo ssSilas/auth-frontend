@@ -1,20 +1,17 @@
-import axios from "axios";
+import axios from "axios"
 
-export const signIn = async (login, password) => {
+const url = process.env.REACT_APP_BASE_URL
+
+export const getProducts = async  () => {
   try {
-    const url = "http://127.0.0.1:3050";
     const req = await axios({
-      url: "/auth/login",
-      method: "POST",
+      url: "/products/",
+      method: "GET",
       baseURL: url,
       headers: {
         "Content-type": "application/json",
         Accept: "*/*",
-      },
-      data: {
-        login,
-        password,
-      },
+      }
     }).then((token) => {
       return token;
     });
@@ -23,4 +20,4 @@ export const signIn = async (login, password) => {
     console.log(error)
     throw { message: "Login e/ou senha inválidos" };
   }
-};
+}

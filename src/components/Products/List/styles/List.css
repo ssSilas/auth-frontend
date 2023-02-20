@@ -1,4 +1,4 @@
-.screen-create-user{
+.screen-list-products{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +9,7 @@
   box-shadow: 0 6em 10em black;
 }
 
-.form-create-user{
+.form-list-user{
   height: 95%; width: 95%;
   display: flex;
   flex-direction: column;
