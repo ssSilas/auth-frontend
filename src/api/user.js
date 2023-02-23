@@ -1,6 +1,5 @@
 import axios from "axios";
 
-// const url = "http://127.0.0.1:3050";:
 const url = process.env.REACT_APP_BASE_URL;
 
 export const signIn = async (login, password) => {
@@ -10,12 +9,12 @@ export const signIn = async (login, password) => {
       method: "POST",
       baseURL: url,
       headers: {
-        "Content-type": "application/json",
+        "Content-Type": "application/json",
         Accept: "*/*",
       },
       data: {
         login,
-        password,
+        password
       },
     }).then((token) => {
       return token;
@@ -34,7 +33,7 @@ export const createUser = async (name, email, login, password, roles) => {
       method: "POST",
       baseURL: url,
       headers: {
-        "Content-type": "application/json",
+        "Content-Type": "application/json",
         Accept: "*/*",
       },
       data: {
