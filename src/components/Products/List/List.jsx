@@ -1,16 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import { getProducts } from '../../../api/products';
+import React from 'react';
+import useFetchProducts from '../../../api/products';
 import Dot from '../../../assets/jsx/Dot';
 import Title from '../../../assets/jsx/Title';
+import CardsProducts from './CardsProducts';
+
 import "./styles/List.css";
 
 function ListProducts() {
-  const [products, setProducts] = useState()
-
-  // useEffect(async () => {
-  //   await getProducts()
-  // })
-
+  const { data, isFetching } = useFetchProducts()
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -26,6 +23,7 @@ function ListProducts() {
         <div className="title">
           <Title text="Products" />
         </div>
+        { !isFetching ? <CardsProducts products={data} /> : ''}
         <Dot justify="left" />
       </form>
     </div>

@@ -5,4 +5,13 @@ X Botão mostrar e esconder senha
 X Validações nos campos de login
 X Implementar criação de usuario
 - Criar tela para permissões que admin e client poderão acessar
-- Implementar variaveis de ambiente - http://127.0.0.1:3050
+  -> Client:
+  	Comprar produto
+  	Listar produto
+  -> Admin: 
+  	Criar usuário
+  	Criar produto
+  	Deletar produto
+  	Atualizar produto
+x Implementar variaveis de ambiente - http://127.0.0.1:3050
+- Criar header com possiveis telas do usuario logado
